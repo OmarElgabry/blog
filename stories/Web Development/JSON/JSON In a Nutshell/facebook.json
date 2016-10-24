@@ -1,0 +1,44 @@
+{
+   "data": [
+      {
+         "id": "X12",
+         "from": {
+            "name": "John Kennedy", "id": "1458633"
+         },
+         "message": "JSON is much easier and better than XML",
+         "actions": [
+            {
+               "name": "Comment",
+               "link": "http://www.facebook.com/X999/posts/Y999"
+            },
+            {
+               "name": "Like",
+               "link": "http://www.facebook.com/X999/posts/Y999"
+            }
+         ],
+         "type": "status",
+         "created_time": "2010-08-02T22:27:44+0000",
+         "updated_time": "2010-08-02T22:27:44+0000"
+      },
+      {
+         "id": "X45",
+         "from": {
+            "name": "Anna Smith", "id": "12587521"
+         },
+         "message": "On my way to write my very first JSON snippet",
+         "actions": [
+            {
+               "name": "Comment",
+               "link": "http://www.facebook.com/X998/posts/Y998"
+            },
+            {
+               "name": "Like",
+               "link": "http://www.facebook.com/X998/posts/Y998"
+            }
+         ],
+         "type": "status",
+         "created_time": "2010-08-02T25:27:44+0000",
+         "updated_time": "2010-08-02T25:27:44+0000"
+      }
+   ]
+}

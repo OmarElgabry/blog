@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+    <title>
+        JSON
+    </title>        
+	    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	    <script>
+	      function successFn(jsonData,status, xhr){
+	       // facebookPosts is an array, same as "data" in json file.
+           var  facebookPosts = jsonData.data; 
+
+           for (var i=0; i < facebookPosts.length; i++){
+               var id = facebookPosts[i].id;
+               var from = facebookPosts[i].from.name;
+               var msg = facebookPosts[i].message;
+               var type = facebookPosts[i].type;
+               var firstAction = facebookPosts[i].actions[0].name;
+              console.log(from+ " of ID: "+id+" wrote: "+msg+" as a "+type);
+           }
+        }
+
+        $.getJSON( "facebookData.json", successFn);  
+	    </script>
+</head>
+<body>
+
+</body>
+</html>
